@@ -74,3 +74,17 @@ finally:
         file.close()
     except:
         pass
+    
+# Deleting a file 
+import os
+file_path = 'Phase 0 - Python/Day 8 - Modules & File Handling in Python/mytype.txt'
+try:
+    os.remove(file_path)
+    print(f"file {file_path} deleted successfuly")
+except FileNotFoundError:
+    print(f"File {file_path} not found")
+except PermissionError:
+    print(f"File {file_path} have Not Permission")
+except Exception as e:
+    print(f"An Unexpected Error Happen {e}")
+      
