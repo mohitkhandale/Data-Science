@@ -64,6 +64,11 @@ try:
     file.write("My self Mohit Deepak Khandale")
 except Exception as e:
     print(f"An error occurred: {e}")
+else:
+    file.close()
+    file = open('E:\Data Science\Phase 0 - Python\Day 8 - Modules & File Handling in Python\mytype.txt','r')
+    contents = file.read()
+    print(contents)
 finally:
     try:
         file.close()
