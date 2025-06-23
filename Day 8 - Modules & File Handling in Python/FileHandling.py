@@ -55,3 +55,17 @@ finally:
         file.close()
     except:
         pass
+
+# Exclusive File handling 'x' 
+# Creates a file and wrutes the content in it 
+
+try:
+    file = open('E:\Data Science\Phase 0 - Python\Day 8 - Modules & File Handling in Python\mytype.txt','x') # Creating the file 'mytype.txt' located at the specified path in Exclusive mode ('x').
+    file.write("My self Mohit Deepak Khandale")
+except Exception as e:
+    print(f"An error occurred: {e}")
+finally:
+    try:
+        file.close()
+    except:
+        pass
