@@ -5,7 +5,7 @@ import seaborn as sns
 
 data = pd.read_csv('Population_Survey_Data.csv')
 data2 = pd.read_csv('Manufacturing_Data.csv')
-print(data.head(5))
+#print(data.head(5))
 #print(data2.head(5))
 
 # 1. Simple Random Sampling 100 records randomly
@@ -26,7 +26,3 @@ Clustered_sample = data2[data2['Batchnumber'].isin(sample_data3)] # The line of 
 sample_data4 = data.iloc[::10, :] # The line of code `sample_data4 = data.iloc[::10, :]` selects every 10th row from the `data` DataFrame using the `.iloc` indexer. The `::10` slicing notation means "take every 10th row," starting from the first row (index 0). This is a systematic sampling technique where we select samples at regular intervals from the population.
 # print(sample_data4)
 
-# mean, median, mode
-print(data2.head(5))
-#mean_value = data2['Income'].mean()
-##print("Mean Income:", mean_value)

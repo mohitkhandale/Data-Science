@@ -79,7 +79,7 @@ print(type(my_set))
 
 # 8. dict -> Dictionary (unordered collection of key-value pairs)
 my_dict = {"name": "Mohit", "age": 20}
-print(type(my_dict))
+print(type(my_dict)) 
 
 # 9. None -> NoneType (represents the absence of a value)
 my_none = None
